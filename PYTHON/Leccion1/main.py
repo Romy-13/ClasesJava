@@ -1,3 +1,4 @@
+'''
 miVariable = 3
 print(miVariable)
 miVariable = "Hola a todos los estudiantes de la tecnicatura"
@@ -59,3 +60,32 @@ numero1 = int(input("Escribe el primer numero: "))
 numero2 = int(input("Escribe el segundo numero: "))
 resultado = numero1 + numero2
 print("El resultado de la suma es: ", resultado)
+'''
+"""
+operandoA = 8
+operandoB = 5
+suma = operandoA + operandoB
+#print("Resultado de la suma:",suma)
+print(f"El resultado de la suma es: {suma}")
+
+resta = operandoA - operandoB
+print(f"El resultado de la resta es: {resta}")
+
+multiplicacion = operandoA * operandoB
+print(f"El resultado de la multiplicacion es:{multiplicacion}")
+
+division = operandoA / operandoB
+print(f"El resultado de la division es: {division}")
+division = operandoA // operandoB
+print(f"El resultado de la division (int) es: {division}")
+modulo = operandoA % operandoB
+print(f"El resultado de division o residuo (modulo) es: {modulo}")
+exponente = operandoA ** operandoB
+print(f"El resultado de la exponente es: {exponente}")
+"""
+alto = int(input("Proporciona el alto del rectangulo: "))
+ancho = int(input("Proporcione el ancho del rectangulo: "))
+area = alto * ancho
+perimetro = (alto + ancho) * 2
+print("area: ", area)
+print("perimetro: ", perimetro)
