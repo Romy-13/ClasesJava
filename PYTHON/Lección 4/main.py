@@ -55,4 +55,24 @@ print(nombres)
 nombres.clear()
 print(nombres)
 
+# Definimos una tupla
+cocina =("cuchara", "cuchillo", "tenedor")
+print(len(cocina))
+
+# Acceder a un elemnto, se realiza con corchetes
+print(cocina[0])
+# Mostrar de manera inversa
+print(cocina[-1])
+
+# Como acceder a un rango
+print(cocina[0:2])
+
+# Recorremos los elementos de la tupla
+for cocinar in cocina:
+    print(cocinar, end=" ")# usamos end= para eliminar el salto de linea
+
+cocina_lista= list(cocina)
+cocina_lista[0]='plato'
+cocina=tuple(cocina_lista)
+print(cocina)
 
