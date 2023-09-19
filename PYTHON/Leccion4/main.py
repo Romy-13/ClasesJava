@@ -204,3 +204,126 @@ print(tupla)
 print(4 in tupla) # acción booleana, su respuesta es de tipo booleana
 # lo que podemos usar dentro de tuplas son: index, count, len
 # en tuplas se puede convertir de tupla a lista y de lista a tupla
+
+# Repaso se set o conjunto
+# para definir un conjunto
+conjunto2 = set()
+conjunto1 = {'bye'}
+conjunto2.add(7)
+conjunto2.add('Hola')
+print(conjunto2)
+conjunto1.add('hola')
+print(conjunto1)
+print(3 not in conjunto1) # Preguntamos si numero 3 No esta en el conjunto1
+
+# Como hacer la igualdad de dos conjuntos
+print(conjunto1 == conjunto2)# Nos devuelve como respuesta un bolleano
+
+# Operaciones en conjunto
+conjunto3 = conjunto1 | conjunto2 # La linea une a los dos conjuntos
+print(conjunto3)
+
+# Intersección
+conjunto3 = conjunto1 & conjunto2 # elementos que tienen en común
+print(conjunto3)
+
+conjunto3 = conjunto1 - conjunto2# asigna el valor que está en el conjunto1 y no en el conjunto2
+print(conjunto3)
+conjunto3 = conjunto2 - conjunto1
+print(conjunto3)
+
+conjunto3 = conjunto1 ^ conjunto2 # elemntos que no comparten o que son diferentes
+print(conjunto3)
+
+#Determinar si un conjunto es un subconjunto
+conjunto3 = conjunto1 | conjunto2
+print(conjunto2.issubset(conjunto3))# Aqui preguntamos si un conjunto es un subconjunto dentro de otro
+print(conjunto1.issubset(conjunto3))
+print(conjunto3.issubset(conjunto1))
+print(conjunto3.issubset(conjunto2))
+
+#Determinar si es un super conjunto
+print(conjunto3.issuperset(conjunto1))#Aca preguntamos si los elementos del conjunto1 estan dentro del 3
+print(conjunto3.issuperset(conjunto2))# si es verdadero quiere decir que el conjunto 3 es un superconjunto
+print(conjunto1.issuperset(conjunto3))
+print(conjunto2.issuperset(conjunto3))
+
+# Como saber si ambos conjuntos son disconexos, esto es si no comparten elementos en común
+print(conjunto1.isdisjoint(conjunto2))
+
+# convertir un conjunto totalmente en inmutable
+conjunto1 = frozenset # Esto hace que el conjunto sea totalmente inmutable
+# no se puede agregar, modificar ni eliminar elementos del conjunto
+
+# Repaso Diccionarios
+diccionarioNuevo = {'Azul': 'Blue', 'Rojo': 'Red', 'Verde': 'Green', 'Amarillo': 'Yellow'}
+print(diccionarioNuevo)
+
+# Como eliminar
+del (diccionarioNuevo['Azul'])
+print(diccionarioNuevo)
+
+# Los diccionarios pueden almacenar diferentes tipos de datos
+diccionario2 = {'Ariel':{'Edad':40, 'Altutra':1.83},'Osvaldo':[45, 1.83],'Natalia': [35, 1.63]}
+print(diccionario2)
+
+seleccionArgentina = {
+    10: {'Nombre': 'Lional Messi', 'Edad':35, 'Altura': 1.70, 'Precio': '50 Millones', 'Posición': 'Extremo derecho'},
+    11: {'Nombre': 'Ángel di Maria', 'Edad': 34, 'Altura': 1.80, 'Precio': '12 Millones', 'Posición': 'Extremo derecho'},
+    21: {'Nombre': 'Paulo Dybala', 'Edad': 29, 'Altura': 1.77, 'Precio': '35 Millones', 'Posición': 'Media punta'},
+    19: {'Nombre': 'Nicolás Otamendi', 'Edad': 34, 'Altura': 1.83, 'Precio': '3.5 Millones', 'Posición': 'Defensa central'},
+    1: {'Nombre': 'Franco Armani', 'Edad': 35, 'Altura': 1.89, 'Precio': '3.5 Millones', 'Posición': 'Portero'},
+    7: {'Nombre': 'Rodrigo de Paul', 'Edad': 29, 'Altura': 1.80, 'Precio': '37 Millones de Euros', 'Posición': 'Centrocampista'},
+    24: {'Nombre': 'Enzo Fernandez', 'Edad': 22, 'Altura': 1.78, 'Precio': '120 Millones', 'Posición': 'Centrocampista'},
+    23: {'Nombre': 'Emiliano Martinez', 'Edad': 31, 'Altura': 1.95, 'Precio':'28 Millones de Euros', 'Posición': 'Portero'}
+}
+for llave, valor in  seleccionArgentina.items():
+    print(llave, valor)
+
+#como tarea agregar por lo menos 4 jugadores más al diccionario: seleccionArgentina
+print('Tenemos cargados en el diccionario la cantidad de jugadores: ', end=' ')
+print(len(seleccionArgentina))
+
+# Pilas usando lista
+pila = [1, 2, 3]
+
+# Agregar elementos a la pila por el final
+pila.append(4)
+pila.append(5)
+print(pila)
+
+# Sacando elementos por el final
+elementoBorrado = pila.pop()
+print(f'Sacamos el elemento: {elementoBorrado}')
+print(f'La pila ahora quedo asi: {pila}')
+
+# Colas con listas
+# Estructuras de datos de tipo fifo(first input / first output)
+cola = ['Ariel', 'Osvaldo', 'Liliana', 'Pilar']
+
+# Agregamos elementos a la lista
+cola.append('Natalia')
+cola.append('Jose')
+print(cola)
+
+# Sacamos elementos de la cola
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
+
+seRetira = cola.pop(0)
+print(f'Atendido el cliente: {seRetira}')
+print(cola)
