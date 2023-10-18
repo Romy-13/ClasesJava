@@ -24,8 +24,8 @@ public class PruebaAritmetica {
         Aritmetica aritmetica2 = new Aritmetica(5,8);
         System.out.println("aritmetica2 = " + aritmetica2.a);
         System.out.println("aritmetica2 = " + aritmetica2.b);
-        //Aritmetica1 = null;     
-        //System.gc(); Método pra limpiar residuos
+        //Aritmetica1 = null;nunca utilizar esto, no se debe hacer
+        //System.gc(); Método pra limpiar residuos, es pesado no utilizar
     }
     public static void miMetodo(){
         int a = 10;
