@@ -19,7 +19,7 @@ let nombre2 = "Pedro";
 console.log(nombre2);
 
 const apellido2 = "Lepes";
-//apellido2 = "Peres";una costanta no puede ser modificada
+//apellido2 = "Peres";una costante no puede ser modificada
 console.log(apellido2);
 
 let x, y; //Se pueden crear varias variables dentro de una misma línea
